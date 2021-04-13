@@ -1,7 +1,12 @@
-/*
-*Polices
-*Logo et titres: Shrikhand
-*Texte: Roboto
-*/
 @import "./Utils/variables";
+@import "./Vendors/fontawesome/fontawesome.scss";
+@import "./Vendors/fontawesome/brands.scss";
+@import "./Vendors/fontawesome/regular.scss";
+@import "./Vendors/fontawesome/solid.scss";
 
+@import "./Base/base";
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./Layout/header";
+@import "./Layout/container";
