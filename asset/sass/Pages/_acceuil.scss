@@ -5,12 +5,18 @@
     justify-content: center;
     background-color: $bg_color_secondary;
     padding: 17px 0;
+    box-shadow: inset 0px 2px 6px 1px rgba(90, 90, 90, 0.2);
     & *{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
     }
-    & i{
-        margin-right: 18px;
+    & p{
+        position: relative;
+    }
+    & p::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+        position: absolute;
+        left: -29px;
     }
 
 }
@@ -21,11 +27,16 @@
     align-items: center;
     justify-content: space-around;
     background-color: $bg_color_tertiary;
-    height: 287px;
-    padding: 30px;
+    padding: 43px 30px 57px 30px;
     text-align: center;
+    & h1{
+        margin-bottom: 21px;
+        line-height: 30px;
+    }
     & p{
         font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 31px;
     }
 }
 
@@ -42,18 +53,20 @@
         border-radius: 25px;
         margin-top: 25px;
         font-weight: bold;
-        box-shadow: 3px 3px 3px 3px rgba(90, 90, 90, 0.1);
+        box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
         &__badge{
             background-color: $color_primary;
             color: #fff;
             border-radius: 25px;
+            font-size: 14px;
+            font-weight: normal;
             height: 25px;
             width: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
-            position:absolute;
-            left:10px;
+            position: absolute;
+            left: 9px;
         }
         & i{
             margin-right: 23px;
@@ -73,12 +86,14 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    height: 440px;
-    padding: 50px 20px;
+    padding: 50px 20px 68px 20px;
 }
 .restaurants {
     display: flex;
     flex-direction: column;
     background-color: $bg_color_tertiary;
-    padding: 17px;
+    padding: 58px 17px 64px 17px;
+    & h1{
+        margin-bottom: 10px;
+    }
 }

@@ -6190,14 +6190,14 @@ input:focus, textarea:focus, select:focus {
 
 body * {
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   box-sizing: border-box;
 }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 h2 {
@@ -6210,11 +6210,11 @@ h2 {
   color: #fff;
   border: 0px;
   border-radius: 25px;
-  padding: 17px 22px;
-  font-weight: bold;
-  font-size: 15px;
+  padding: 17px 24px;
+  font-size: 16px;
   background: #ff79da;
-  background: linear-gradient(163deg, #ff79da 0%, #cd69db 85%, #9356dc 100%);
+  background: linear-gradient(171deg, #ff79da 0%, #cd69db 42%, #9356dc 100%);
+  box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
 }
 
 .card {
@@ -6222,7 +6222,7 @@ h2 {
   flex-direction: column;
   border: 0px;
   border-radius: 14px;
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
   overflow: hidden;
   margin-top: 18px;
 }
@@ -6238,10 +6238,12 @@ h2 {
   background-color: #99E2D0;
   color: #008766;
   /* darken */
+  font-size: 13px;
+  font-weight: bold;
   align-self: flex-start;
   margin-top: 12px;
   margin-right: 12px;
-  padding: 10px;
+  padding: 8px 13px;
   border-radius: 3px;
 }
 .card__prev {
@@ -6264,6 +6266,7 @@ h2 {
 }
 
 .bg-img-2 {
+  background-position: 0px -155px;
   background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
@@ -6276,7 +6279,7 @@ h2 {
 }
 
 .header {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .nav__logo {
@@ -6305,7 +6308,7 @@ h2 {
   font-weight: bold;
   font-size: 27px;
   filter: invert(100%);
-  height: 15px;
+  height: 16px;
   margin-bottom: 23px;
 }
 
@@ -6327,13 +6330,21 @@ h2 {
   justify-content: center;
   background-color: #EAEAEA;
   padding: 17px 0;
+  box-shadow: inset 0px 2px 6px 1px rgba(90, 90, 90, 0.2);
 }
 .location * {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
-.location i {
-  margin-right: 18px;
+.location p {
+  position: relative;
+}
+.location p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: -29px;
 }
 
 .reservation {
@@ -6342,12 +6353,17 @@ h2 {
   align-items: center;
   justify-content: space-around;
   background-color: #F6F6F6;
-  height: 287px;
-  padding: 30px;
+  padding: 43px 30px 57px 30px;
   text-align: center;
+}
+.reservation h1 {
+  margin-bottom: 21px;
+  line-height: 30px;
 }
 .reservation p {
   font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 31px;
 }
 
 .list {
@@ -6364,19 +6380,21 @@ h2 {
   border-radius: 25px;
   margin-top: 25px;
   font-weight: bold;
-  box-shadow: 3px 3px 3px 3px rgba(90, 90, 90, 0.1);
+  box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
 }
 .list__item__badge {
   background-color: #9356DC;
   color: #fff;
   border-radius: 25px;
+  font-size: 14px;
+  font-weight: normal;
   height: 25px;
   width: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 10px;
+  left: 9px;
 }
 .list__item i {
   margin-right: 23px;
@@ -6394,15 +6412,17 @@ h2 {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  height: 440px;
-  padding: 50px 20px;
+  padding: 50px 20px 68px 20px;
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
-  padding: 17px;
+  padding: 58px 17px 64px 17px;
+}
+.restaurants h1 {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
