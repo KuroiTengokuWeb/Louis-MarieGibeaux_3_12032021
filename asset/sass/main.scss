@@ -4,9 +4,15 @@
 @import "./Vendors/fontawesome/regular.scss";
 @import "./Vendors/fontawesome/solid.scss";
 
+@import "./Base/reset";
 @import "./Base/base";
-@import "./base/reset";
-@import "./base/typography";
+@import "./Base/typography";
+
+@import "./Composants/btn";
+@import "./Composants/card";
 
 @import "./Layout/header";
 @import "./Layout/container";
+@import "./Layout/footer";
+
+@import "./Pages/acceuil";

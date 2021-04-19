@@ -1,10 +1,11 @@
 .header {
-    height: 63px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;   
+    padding: 15px;
+}
+
+.nav {
     &__logo {
         display: flex;
+        justify-content: center;
         height: 30px;
     }
 }
