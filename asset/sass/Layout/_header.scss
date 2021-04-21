@@ -1,11 +1,22 @@
 .header {
     padding: 15px 0;
 }
-
+.hidden{
+    visibility: hidden;
+}
 .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    & i{
+        font-size: 18px;
+    }
+    & a:first-child{
+        position: absolute;
+        left: 23px;
+    }
     &__logo {
-        display: flex;
-        justify-content: center;
         height: 30px;
     }
 }

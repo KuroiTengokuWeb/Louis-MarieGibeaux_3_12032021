@@ -31,7 +31,8 @@
     text-align: center;
     & h1{
         margin-bottom: 21px;
-        line-height: 30px;
+        line-height: 25px;
+        font-size: 25px;
     }
     & p{
         font-size: 17px;
@@ -48,7 +49,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding:25px;
+        padding: 25px;
         border: 0px;
         border-radius: 25px;
         margin-top: 25px;
@@ -71,7 +72,7 @@
         & i{
             margin-right: 23px;
             margin-left: 10px;
-            font-size: 16px;
+            font-size: 18px;
             color : $color_icon;
         }
         &--active{
@@ -95,5 +96,6 @@
     padding: 58px 17px 64px 17px;
     & h1{
         margin-bottom: 10px;
+        font-size: 22px;
     }
 }

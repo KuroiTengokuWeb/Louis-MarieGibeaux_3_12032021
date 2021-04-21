@@ -6195,9 +6195,8 @@ body * {
 }
 
 h1 {
-  font-family: "Shrikhand", sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h2 {
@@ -6205,6 +6204,12 @@ h2 {
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .btn {
   /* 218 51 */
   color: #fff;
@@ -6215,6 +6220,10 @@ h2 {
   background: #ff79da;
   background: linear-gradient(171deg, #ff79da 0%, #cd69db 42%, #9356dc 100%);
   box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
+  /* 186 50 */
+}
+.btn--large {
+  padding: 16px 49px;
 }
 
 .card {
@@ -6225,6 +6234,15 @@ h2 {
   box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
   overflow: hidden;
   margin-top: 18px;
+  position: relative;
+  z-index: 1;
+}
+.card i {
+  font-size: 22px;
+  position: absolute;
+  z-index: 10;
+  bottom: 33px;
+  right: 24px;
 }
 .card__background {
   background-position: bottom;
@@ -6257,9 +6275,6 @@ h2 {
 .card__prev h2 {
   margin-bottom: 6px;
 }
-.card__prev i {
-  font-size: 22px;
-}
 
 .bg-img-1 {
   background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -6282,9 +6297,24 @@ h2 {
   padding: 15px 0;
 }
 
-.nav__logo {
+.hidden {
+  visibility: hidden;
+}
+
+.nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav i {
+  font-size: 18px;
+}
+.nav a:first-child {
+  position: absolute;
+  left: 23px;
+}
+.nav__logo {
   height: 30px;
 }
 
@@ -6358,7 +6388,8 @@ h2 {
 }
 .reservation h1 {
   margin-bottom: 21px;
-  line-height: 30px;
+  line-height: 25px;
+  font-size: 25px;
 }
 .reservation p {
   font-size: 17px;
@@ -6399,7 +6430,7 @@ h2 {
 .list__item i {
   margin-right: 23px;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: #7e7e7e;
 }
 .list__item--active {
@@ -6423,6 +6454,91 @@ h2 {
 }
 .restaurants h1 {
   margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.menu_background {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  padding-top: 220px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding: 34px 14px 83px 14px;
+  border-radius: 38px 38px 0 0;
+}
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  margin-left: 5px;
+}
+.menu__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+.menu__title i {
+  margin-right: 26px;
+  font-size: 22px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 43px;
+}
+.menu__list h1 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.menu__list span {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin-top: 9px;
+}
+.menu__list h1, .menu__list span {
+  margin-left: 6px;
+}
+.menu__list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFF;
+  margin-top: 14px;
+  padding: 15px 10px 14px 10px;
+  border-radius: 13px;
+  box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
+}
+.menu__list__prev h2 {
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+.menu__list__price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-weight: bold;
+}
+.menu__list__price p {
+  width: 59px;
+  display: flex;
+  justify-content: center;
+}
+.menu__list__price div {
+  display: none;
+  background: #99E2D0;
+  width: 59px;
+}
+.menu__checkout {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
