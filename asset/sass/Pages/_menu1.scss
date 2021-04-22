@@ -19,8 +19,7 @@
         margin-left: 5px;
         & h1{
             font-family: 'Shrikhand', sans-serif;
-            font-size: 30px;
-            font-weight: normal;
+            font-size: 28px;
         }
         & i{
             margin-right: 26px;
@@ -32,6 +31,7 @@
         flex-direction: column;
         margin-bottom: 43px;
         & h1{
+            font-family: 'Roboto', sans-serif;
             font-size: 15px;
             font-weight: normal;
         }
@@ -59,6 +59,9 @@
                 margin-bottom: 7px;
                 font-size: 17px;
             }
+            & p{
+                font-size: 14px;
+            }
         }
         &__price{
             display: flex;
@@ -67,6 +70,7 @@
             font-weight: bold;
             & p{
                 width:59px;
+                font-size: 13px;
                 display: flex;
                 justify-content: center;
             }

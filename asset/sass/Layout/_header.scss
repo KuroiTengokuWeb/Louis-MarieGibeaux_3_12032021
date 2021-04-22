@@ -1,5 +1,5 @@
 .header {
-    padding: 15px 0;
+    padding: 23px 0 12px 0;
 }
 .hidden{
     visibility: hidden;
@@ -9,6 +9,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    & a{
+        line-height: 0;
+    }
     & i{
         font-size: 18px;
     }
@@ -17,6 +20,6 @@
         left: 23px;
     }
     &__logo {
-        height: 30px;
+        height: 28px;
     }
 }
