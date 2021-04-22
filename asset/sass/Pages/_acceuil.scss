@@ -1,3 +1,4 @@
+
 .location {
     display: flex;
     flex-direction: row;
@@ -30,12 +31,11 @@
     padding: 43px 30px 57px 30px;
     text-align: center;
     & h1{
-        margin-bottom: 21px;
+        margin-bottom: 15px;
         line-height: 25px;
-        font-size: 25px;
+        padding: 0 14px;
     }
     & p{
-        font-size: 17px;
         line-height: 20px;
         margin-bottom: 31px;
     }
@@ -58,11 +58,11 @@
         &__badge{
             background-color: $color_primary;
             color: #fff;
-            border-radius: 25px;
+            border-radius: 12px;
             font-size: 14px;
             font-weight: normal;
-            height: 25px;
-            width: 25px;
+            height: 24px;
+            width: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,6 +96,5 @@
     padding: 58px 17px 64px 17px;
     & h1{
         margin-bottom: 10px;
-        font-size: 22px;
     }
 }
