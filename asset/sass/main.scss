@@ -1,4 +1,6 @@
 @import "./Utils/variables";
+@import "./Utils/mixin";
+
 @import "./Vendors/fontawesome/fontawesome.scss";
 @import "./Vendors/fontawesome/brands.scss";
 @import "./Vendors/fontawesome/regular.scss";
@@ -16,4 +18,4 @@
 @import "./Layout/footer";
 
 @import "./Pages/acceuil";
-@import "./Pages/menu1";
+@import "./Pages/menu";

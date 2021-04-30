@@ -8,3 +8,10 @@ $bg_color_primary: #FFF;
 $bg_color_secondary: #EAEAEA;
 $bg_color_tertiary: #F6F6F6;
 $bg_color_quartiary: #353535;
+
+$breakpoints: (
+    mobile: 640px,
+    mobileplus: 768px,
+    tablette: 1024px,
+    desktop: 1200px
+)

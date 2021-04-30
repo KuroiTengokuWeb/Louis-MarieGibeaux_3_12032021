@@ -28,6 +28,9 @@
     justify-content: space-around;
     background-color: $bg_color_tertiary;
     padding: 43px 30px 57px 30px;
+    @include breakpoints_tablette{
+        padding:80px 30px;
+    }
     text-align: center;
     & h1{
         margin-bottom: 15px;
@@ -91,9 +94,17 @@
 .restaurants {
     display: flex;
     flex-direction: column;
+    @include breakpoints_mobile{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     background-color: $bg_color_tertiary;
     padding: 58px 17px 64px 17px;
     & h1{
         margin-bottom: 10px;
+        @include breakpoints_mobile{
+            width: 100%;
+        }
     }
 }

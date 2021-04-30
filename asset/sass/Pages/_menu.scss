@@ -3,7 +3,15 @@
   background-repeat: no-repeat;
   background-size: 110%;
   padding-top: 220px;
+  &--alt{
+    background-position: 0px -107px;
+  }
+  @include breakpoints_tablette {
+    background-size: 100%;
+    padding-top: 400px;
+  }
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -17,9 +25,15 @@
     justify-content: space-between;
     margin-bottom: 35px;
     margin-left: 5px;
+    @include breakpoints_tablette {
+      margin-bottom: 55px;
+    }
     & h1 {
       font-family: "Shrikhand", sans-serif;
       font-size: 28px;
+      @include breakpoints_tablette {
+        font-size: 40px;
+      }
     }
     & i {
       margin-right: 26px;
@@ -36,10 +50,16 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 43px;
+  @include breakpoints_tablette {
+    margin-bottom: 70px;
+  }
   & h1 {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: normal;
+    @include breakpoints_tablette {
+      font-size: 18px;
+    }
   }
   & span {
     background-color: $color_tertiary;
@@ -62,26 +82,34 @@
     overflow: hidden;
 
     opacity: 0;
-    animation: fadeIn 0.7s;
+    animation: fadeIn 0.8s;
     animation-fill-mode: both;
-    &:nth-child(3n+1) {
-        -webkit-animation-delay: 0.1s;
-        animation-delay: 0.1s;
-      }
-      
-    &:nth-child(3n+2) {
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
-      }
-      
-    &:nth-child(3n+3) {
-        -webkit-animation-delay: 0.5s;
-        animation-delay: 0.5s;
-      }
+
+    &:nth-child(4n + 1) {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+    }
+    &:nth-child(4n + 2) {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+    &:nth-child(4n + 3) {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    &:nth-child(4n + 4) {
+      -webkit-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+    }
 
     &:hover {
+      cursor: pointer;
       .menu__checkbox {
-        animation: checkbox-hover 1000ms both;
+        width: 68px;
+        padding: 0;
+        @media (min-width: 500px) {
+          width: 60px;
+        }
       }
       .menu__checkbox__icon i {
         animation: spin 900ms both;
@@ -105,12 +133,18 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @include breakpoints_tablette {
+          font-size: 19px;
+        }
       }
       & p {
         font-size: 14px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @include breakpoints_tablette {
+          font-size: 16px;
+        }
       }
     }
     &__price {
@@ -125,16 +159,21 @@
         margin-bottom: 15px;
         padding-left: 15px;
         padding-right: 23px;
+        @include breakpoints_tablette {
+          font-size: 15px;
+        }
       }
     }
   }
   &__checkbox {
-    animation: checkbox-hover-out 1000ms both;
-    width: 60px;
+    transition-property: width, padding;
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 0s;
+    width: 0px;
+    overflow: hidden;
     display: flex;
-    background: grey;
+    //background: grey;
     padding-left: 10px;
-    margin-right: -50px;
     &__icon {
       background-color: $color_tertiary;
       color: $bg_color_primary;
@@ -142,24 +181,14 @@
       align-items: center;
       justify-content: center;
       padding: 0px 21px;
-      & i{
-       animation: spin-out 900ms 1;
-       animation-fill-mode: both;
+      & i {
+        animation: spin-out 900ms 1;
+        animation-fill-mode: both;
       }
     }
   }
 }
-@keyframes checkbox-hover {
-  0% {
-    padding-left: 10px;
-    margin-right: -50px;
-  }
 
-  100% {
-    padding-left: 0px;
-    margin-right: 0px;
-  }
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -168,16 +197,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes checkbox-hover-out {
-  0% {
-    padding-left: 0px;
-    margin-right: 0px;
-  }
-  100% {
-    padding-left: 10px;
-    margin-right: -50px;
-  }
-}
+
 @keyframes spin-out {
   0% {
     transform: rotate(360deg);
@@ -187,12 +207,12 @@
   }
 }
 @keyframes fadeIn {
-    0% {
-        opacity: 0.0;
-        transform: translate3d(0, 20%, 0);
-      }
-    100% {
-        opacity: 1.0;
-        transform: translate3d(0, 0, 0);
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

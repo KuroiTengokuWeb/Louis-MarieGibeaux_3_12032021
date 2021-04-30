@@ -59,10 +59,42 @@
                         </div>
                     </div>
                 </a>
-                <i class="far fa-heart"></i>
+                <div class="icn-bloc">
+                    <svg viewBox="0 0 100 100" width="30">
+                        <defs>
+                            <linearGradient id="Gradient-heart"
+                            x1="40%" y1="30%" x2="20%" y2="80%">
+                                <stop offset="0%" stop-color= "rgba(162, 95, 242, 1)" />
+                                <stop offset="75%" stop-color= "rgba(226, 116, 241, 1)" />
+                                <stop offset="100%" stop-color= "rgba(255, 133, 240, 1)" />
+                            </linearGradient>
+
+                        </defs>
+                        
+                        <clipPath id="myClip">
+                          <!-- La forme créée par le détourage est un simple cercle. -->
+                          <rect x="0" y="100"  width="100" height="100"/>
+                        </clipPath>
+            
+                        <!-- Le coeur sans détourage, pour référence pour animer le remplissage-->
+                        <path id="heart" fill-opacity="1" stroke="url(#Gradient-heart)" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                       <!-- La douille pour fill le coeur -->
+                        <path id="heart-s" fill="white" stroke="black" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                        <!--
+                          Le coeur avec détourage.
+                          Seule la partie à l'intérieur du cercle est visible.
+                        -->
+                        <use clip-path="url(#myClip)" xlink:href="#heart"  fill="url(#Gradient-heart)" />
+                      </svg>
+                </div>
+            </div>
             </div>
             <div class="card">
-                <a href="./menu_1.html">
+                <a href="./menu_2.html">
                     <div class="card__background bg-img-2">
                         <p class="card__badge">Nouveau</p>
                     </div>
@@ -73,11 +105,32 @@
                         </div>
                     </div>
                 </a>
-                <i class="far fa-heart"></i>
-                <!-- <i class="fas fa-heart"></i> -->
+                <div class="icn-bloc">
+                    <svg viewBox="0 0 100 100" width="30">
+                        <clipPath id="myClip2">
+                          <!-- La forme créée par le détourage est un simple cercle. -->
+                          <rect x="0" y="100"  width="100" height="100"/>
+                        </clipPath>
+            
+                        <!-- Le coeur sans détourage, pour référence pour animer le remplissage-->
+                        <path id="heart" fill-opacity="1" stroke="url(#Gradient-heart)" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                       <!-- La douille pour fill le coeur -->
+                        <path id="heart-s" fill="white" stroke="black" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                        <!--
+                          Le coeur avec détourage.
+                          Seule la partie à l'intérieur du cercle est visible.
+                        -->
+                        <use clip-path="url(#myClip2)" xlink:href="#heart"  fill="url(#Gradient-heart)" />
+                      </svg>
+                </div>
+
             </div>
             <div class="card">
-                <a href="./menu_1.html">
+                <a href="./menu_3.html">
                     <div class="card__background bg-img-3"></div>
                     <div class="card__prev">
                         <div>
@@ -86,10 +139,31 @@
                         </div>
                     </div>
                 </a>
-                <i class="far fa-heart"></i>
+                <div class="icn-bloc">
+                    <svg viewBox="0 0 100 100" width="30">
+                        <clipPath id="myClip3">
+                          <!-- La forme créée par le détourage est un simple cercle. -->
+                          <rect x="0" y="100"  width="100" height="100"/>
+                        </clipPath>
+            
+                        <!-- Le coeur sans détourage, pour référence pour animer le remplissage-->
+                        <path id="heart" fill-opacity="1" stroke="url(#Gradient-heart)" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                       <!-- La douille pour fill le coeur -->
+                        <path id="heart-s" fill="white" stroke="black" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                        <!--
+                          Le coeur avec détourage.
+                          Seule la partie à l'intérieur du cercle est visible.
+                        -->
+                        <use clip-path="url(#myClip3)" xlink:href="#heart"  fill="url(#Gradient-heart)" />
+                      </svg>
+                </div>
             </div>
             <div class="card">
-                <a href="./menu_1.html">
+                <a href="./menu_4.html">
                     <div class="card__background bg-img-4"></div>
                     <div class="card__prev">
                         <div>
@@ -98,7 +172,28 @@
                         </div>
                     </div>
                 </a>
-                <i class="far fa-heart"></i>
+                <div class="icn-bloc">
+                    <svg viewBox="0 0 100 100" width="30">
+                        <clipPath id="myClip4">
+                          <!-- La forme créée par le détourage est un simple cercle. -->
+                          <rect x="0" y="100"  width="100" height="100"/>
+                        </clipPath>
+            
+                        <!-- Le coeur sans détourage, pour référence pour animer le remplissage-->
+                        <path id="heart" fill-opacity="1" stroke="url(#Gradient-heart)" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                       <!-- La douille pour fill le coeur -->
+                        <path id="heart-s" fill="white" stroke="black" stroke-width="3" 
+                             d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+            
+                        <!--
+                          Le coeur avec détourage.
+                          Seule la partie à l'intérieur du cercle est visible.
+                        -->
+                        <use clip-path="url(#myClip4)" xlink:href="#heart"  fill="url(#Gradient-heart)" />
+                      </svg>
+                </div>
             </div>
         </section>
     </main>

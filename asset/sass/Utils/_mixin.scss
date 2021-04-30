@@ -1,0 +1,10 @@
+@mixin breakpoints_mobile{
+    @media (min-width: map-get($breakpoints, 'mobile')) {
+        @content;
+    }
+}
+@mixin breakpoints_tablette{
+    @media (min-width: map-get($breakpoints, 'tablette')) {
+        @content;
+    }
+}

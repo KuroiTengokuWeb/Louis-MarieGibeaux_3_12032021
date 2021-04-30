@@ -14,6 +14,9 @@
     }
     & i{
         font-size: 18px;
+        @include breakpoints_tablette{
+            font-size: 30px;
+        }
     }
     & a:first-child{
         position: absolute;
@@ -21,5 +24,8 @@
     }
     &__logo {
         height: 28px;
+        @include breakpoints_tablette{
+            height: 64px;
+        }
     }
 }
