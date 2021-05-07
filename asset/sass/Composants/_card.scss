@@ -4,33 +4,16 @@
   bottom: 33px;
   right: 24px;
   overflow: hidden;
-  #myClip rect {
-    transition: all 3s;
-  }
-  #myClip2 rect {
-    transition: all 3s;
-  }
-  #myClip3 rect {
-    transition: all 3s;
-  }
-  #myClip4 rect {
-    transition: all 3s;
-  }
   &:hover {
     cursor: pointer;
-    #myClip rect {
-      transform: translateY(-100px);
-    }
-    #myClip2 rect {
-      transform: translateY(-100px);
-    }
-    #myClip3 rect {
-      transform: translateY(-100px);
-    }
-    #myClip4 rect {
+    .fill-heart{
       transform: translateY(-100px);
     }
   }
+}
+
+.fill-heart{
+  transition: all 3s;
 }
 
 .card {

@@ -6235,18 +6235,31 @@ h1, h2 {
   border-radius: 25px;
   padding: 16px 22px;
   font-size: 16px;
-  transition-property: background-image;
-  transition-duration: 5s;
   background: #ff79da;
   background-image: linear-gradient(171deg, #ff79da 0%, #cd69db 42%, #9356dc 100%);
   -webkit-box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
   -moz-box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
   box-shadow: 0px 6px 10px 1px rgba(90, 90, 90, 0.2);
+  position: relative;
+  z-index: 1;
 }
 .btn--large {
   padding: 16px 49px;
 }
-.btn:hover {
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 25px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
   cursor: pointer;
   background: #ff79da;
   background-image: linear-gradient(171deg, #ff85f0 0%, #e274f1 42%, #a25ff2 100%);
@@ -6262,32 +6275,15 @@ h1, h2 {
   right: 24px;
   overflow: hidden;
 }
-.icn-bloc #myClip rect {
-  transition: all 3s;
-}
-.icn-bloc #myClip2 rect {
-  transition: all 3s;
-}
-.icn-bloc #myClip3 rect {
-  transition: all 3s;
-}
-.icn-bloc #myClip4 rect {
-  transition: all 3s;
-}
 .icn-bloc:hover {
   cursor: pointer;
 }
-.icn-bloc:hover #myClip rect {
+.icn-bloc:hover .fill-heart {
   transform: translateY(-100px);
 }
-.icn-bloc:hover #myClip2 rect {
-  transform: translateY(-100px);
-}
-.icn-bloc:hover #myClip3 rect {
-  transform: translateY(-100px);
-}
-.icn-bloc:hover #myClip4 rect {
-  transform: translateY(-100px);
+
+.fill-heart {
+  transition: all 3s;
 }
 
 .card {
@@ -6649,9 +6645,15 @@ h1, h2 {
     font-size: 40px;
   }
 }
-.content__title i {
+.content__title svg {
   margin-right: 26px;
   font-size: 22px;
+}
+.content__title svg:hover {
+  cursor: pointer;
+}
+.content__title svg:hover .fill-heart {
+  transform: translateY(-100px);
 }
 .content__checkout {
   display: flex;
