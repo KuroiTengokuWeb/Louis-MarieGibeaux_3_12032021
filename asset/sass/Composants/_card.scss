@@ -1,13 +1,13 @@
 .icn-bloc {
   position: absolute;
   z-index: 10;
-  bottom: 33px;
+  bottom: 24px;
   right: 24px;
   overflow: hidden;
   &:hover {
     cursor: pointer;
     .fill-heart{
-      transform: translateY(-100px);
+      transform: translateY(-15px);
     }
   }
 }
